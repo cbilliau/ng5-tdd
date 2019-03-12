@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { componentFactoryName } from '@angular/compiler';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -28,4 +29,5 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to ng5-tdd!');
   });
+
 });
